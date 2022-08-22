@@ -5,7 +5,7 @@ const WhyChoseUs = () => {
     return (
         <div className="why-chose-us">
             <div>
-                <img src="https://weruntheplanet.blog/wp-content/uploads/2021/09/OrganicFarming-7-7-2021.jpg" />
+                {/* <img src="https://weruntheplanet.blog/wp-content/uploads/2021/09/OrganicFarming-7-7-2021.jpg" /> */}
             </div>
             <div className="why-chose">
                 <h2>Why Chose Us?</h2>

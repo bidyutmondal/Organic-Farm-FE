@@ -43,9 +43,9 @@ const Navbars = () => {
                                 <Button onClick={logout} className="btn-danger  bg-danger bg-opacity-50 ms-2 mb-2">Logout </Button>
                                 :
                                 <div className='mt-2'>
-                                    <Link className="text-decoration-none text-start p-2 text-dark" to="/login">Log in</Link>
+                                    <Link className="text-decoration-none text-start p-2 text-dark" to="/login">Log In</Link>
 
-                                    <Link className="text-decoration-none text-start p-2 text-dark" to="/signup">Sign UP</Link>
+                                    <Link className="text-decoration-none text-start p-2 text-dark" to="/signup">Sign Up</Link>
                                 </div>
                             }
 
