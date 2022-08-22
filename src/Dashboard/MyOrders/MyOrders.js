@@ -8,7 +8,7 @@ const MyOrders = () => {
     const [foods, setFoods] = useState([]);
 
     useEffect(() => {
-        fetch('https://vast-chamber-82381.herokuapp.com/selectedProducts')
+        fetch('https://jk-organic-farm-backend.herokuapp.com/selectedProducts')
             .then(res => res.json())
             .then(data => {
                 const selectFood = data.filter(e =>
@@ -22,7 +22,7 @@ const MyOrders = () => {
     const handleCancelOrder = id => {
         const proceed = window.confirm('Are you sure you want to cancel this order?');
         if (proceed) {
-            const uri = `https://vast-chamber-82381.herokuapp.com/selectedProducts/${id}`;
+            const uri = `https://jk-organic-farm-backend.herokuapp.com/selectedProducts/${id}`;
             fetch(uri, {
                 method: "DELETE"
             })

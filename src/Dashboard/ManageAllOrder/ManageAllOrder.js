@@ -7,7 +7,7 @@ const ManageAllOrder = () => {
     const [approve, setApprove] = useState(false);
 
     useEffect(() => {
-        fetch('https://vast-chamber-82381.herokuapp.com/selectedProducts')
+        fetch('https://jk-organic-farm-backend.herokuapp.com/selectedProducts')
             .then(res => res.json())
             .then(data => setFood(data))
     }, [approve]);
@@ -16,7 +16,7 @@ const ManageAllOrder = () => {
     const handleCancelOrder = id => {
         const proceed = window.confirm('Are you sure you want to cancel this order?');
         if (proceed) {
-            const uri = `https://vast-chamber-82381.herokuapp.com/selectedProducts/${id}`;
+            const uri = `https://jk-organic-farm-backend.herokuapp.com/selectedProducts/${id}`;
             fetch(uri, {
                 method: "DELETE"
             })
@@ -35,7 +35,7 @@ const ManageAllOrder = () => {
     };
     //update...
     const handleUpdateBtn = id => {
-        const uri = `https://vast-chamber-82381.herokuapp.com/selectedProducts/${id}`;
+        const uri = `https://jk-organic-farm-backend.herokuapp.com/selectedProducts/${id}`;
         fetch(uri, {
             method: "PUT",
             headers: {

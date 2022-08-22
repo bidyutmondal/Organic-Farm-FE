@@ -9,7 +9,7 @@ const CustomerReview = () => {
     const [reviews, setReviews] = useState([]);
 
     useEffect(() => {
-        fetch('https://vast-chamber-82381.herokuapp.com/reviews')
+        fetch('https://jk-organic-farm-backend.herokuapp.com/reviews')
             .then(res => res.json())
             .then(data => setReviews(data))
     }, [])

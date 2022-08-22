@@ -7,7 +7,7 @@ const OurProducts = () => {
     const [ourProducts, setOurProducts] = useState([]);
 
     useEffect(() => {
-        fetch('https://vast-chamber-82381.herokuapp.com/products')
+        fetch('https://jk-organic-farm-backend.herokuapp.com/products')
             .then(res => res.json())
             .then(data => setOurProducts(data.splice(0, 6)))
     }, [])

@@ -27,7 +27,7 @@ const Booking = () => {
 
         const confirmProduct = { name, email, phone, address, status, product };
 
-        fetch('https://vast-chamber-82381.herokuapp.com/selectedProducts', {
+        fetch('https://jk-organic-farm-backend.herokuapp.com/selectedProducts', {
             method: "POST",
             headers: {
                 "content-type": "application/json"
@@ -49,7 +49,7 @@ const Booking = () => {
     const [orders, setOrders] = useState([]);
 
     useEffect(() => {
-        fetch('https://vast-chamber-82381.herokuapp.com/products')
+        fetch('https://jk-organic-farm-backend.herokuapp.com/products')
             .then(res => res.json())
             .then(data => setOrders(data))
     }, [product]);

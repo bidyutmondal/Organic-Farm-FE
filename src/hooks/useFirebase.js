@@ -69,7 +69,7 @@ const useFirebase = () => {
                 // const uid = user.uid;
                 setUser(user)
                 setAdminLoading(true);
-                fetch(` https://vast-chamber-82381.herokuapp.com/users/${user.email}`)
+                fetch(` https://jk-organic-farm-backend.herokuapp.com/users/${user.email}`)
                     .then(res => res.json())
                     .then(data => setAdmin(data.admin))
                     .finally(() => setAdminLoading(false));
@@ -98,7 +98,7 @@ const useFirebase = () => {
     //save user info to database
     const saveUser = (email, displayName, method) => {
         const user = { email, displayName };
-        fetch('https://vast-chamber-82381.herokuapp.com/users', {
+        fetch('https://jk-organic-farm-backend.herokuapp.com/users', {
             method: method,
             headers: {
                 'content-type': 'application/json'

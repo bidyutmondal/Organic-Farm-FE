@@ -7,7 +7,7 @@ const Explores = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch('https://vast-chamber-82381.herokuapp.com/products')
+        fetch('https://jk-organic-farm-backend.herokuapp.com/products')
             .then(res => res.json())
             .then(data => setProducts(data));
     }, [])

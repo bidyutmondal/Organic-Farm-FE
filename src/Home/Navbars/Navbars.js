@@ -9,7 +9,7 @@ const Navbars = () => {
         <div>
             <Navbar collapseOnSelect expand="lg" bg="white" className="sticky-top" variant="light" >
                 <Container>
-                    <Navbar.Brand href="#home">ORGANIC FOODS</Navbar.Brand>
+                    <Navbar.Brand href="#home">JK ORGANIC FARM</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
@@ -37,7 +37,7 @@ const Navbars = () => {
 
 
 
-                            {user?.email && <p className="mt-2 ms-2">signed in as: {user?.displayName}</p>}
+                            {user?.email && <p className="mt-2 ms-2"> {user?.displayName}</p>}
 
                             {user?.email ?
                                 <Button onClick={logout} className="btn-danger  bg-danger bg-opacity-50 ms-2 mb-2">Logout </Button>

@@ -8,7 +8,7 @@ const ManageAllProducts = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch('https://vast-chamber-82381.herokuapp.com/products')
+        fetch('https://jk-organic-farm-backend.herokuapp.com/products')
             .then(res => res.json())
             .then(data => setProducts(data))
     }, []);
@@ -17,7 +17,7 @@ const ManageAllProducts = () => {
     const handleRemoveProducts = id => {
         const proceed = window.confirm('Are you sure you want to remove this product?');
         if (proceed) {
-            const uri = `https://vast-chamber-82381.herokuapp.com/products/${id}`;
+            const uri = `https://jk-organic-farm-backend.herokuapp.com/products/${id}`;
             fetch(uri, {
                 method: "DELETE"
             })

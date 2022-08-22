@@ -17,7 +17,7 @@ const CreateAdmin = () => {
 
     const handleAdmin = e => {
         const user = { email };
-        fetch('https://vast-chamber-82381.herokuapp.com/users/admin', {
+        fetch('https://jk-organic-farm-backend.herokuapp.com/users/admin', {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
@@ -37,7 +37,7 @@ const CreateAdmin = () => {
 
     // admins collection
     useEffect(() => {
-        fetch('https://vast-chamber-82381.herokuapp.com/users')
+        fetch('https://jk-organic-farm-backend.herokuapp.com/users')
             .then(res => res.json())
             .then(data => {
                 console.log(data);

@@ -16,7 +16,7 @@ const AddProducts = () => {
 
         const newProduct = { product, price, description, image };
 
-        fetch('https://vast-chamber-82381.herokuapp.com/products', {
+        fetch('https://jk-organic-farm-backend.herokuapp.com/products', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

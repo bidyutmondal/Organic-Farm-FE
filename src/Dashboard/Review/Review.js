@@ -24,7 +24,7 @@ const Review = () => {
 
         const review = { name, email, description, rating };
 
-        fetch('https://vast-chamber-82381.herokuapp.com/reviews', {
+        fetch('https://jk-organic-farm-backend.herokuapp.com/reviews', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
